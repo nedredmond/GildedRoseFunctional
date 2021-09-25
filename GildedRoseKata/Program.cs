@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Xunit;
+using System.Linq;
+using GildedRoseKata.Inventory;
 
 namespace GildedRoseKata
 {
@@ -43,11 +44,12 @@ namespace GildedRoseKata
 
             for (var i = 0; i < 31; i++)
             {
+                var updatedItems = app.Inventory.ToList();
                 Console.WriteLine("-------- day " + i + " --------");
                 Console.WriteLine("name, sellIn, quality");
                 for (var j = 0; j < Items.Count; j++)
                 {
-                    System.Console.WriteLine(Items[j].Name + ", " + Items[j].SellIn + ", " + Items[j].Quality);
+                    Console.WriteLine(updatedItems[j].Name + ", " + updatedItems[j].SellIn + ", " + updatedItems[j].Quality);
                 }
                 Console.WriteLine("");
                 app.UpdateQuality();
