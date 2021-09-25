@@ -1,6 +1,6 @@
 # Functional Gilded Rose
 
-An exercise in completing the Gilded Rose Kata with pure functions *(except for the `UpdateQuality()` function in `GildedRose.cs`!)* in C#. Forked from [C# starter created by ardalis](https://github.com/ardalis/GildedRoseStarter).
+An exercise in completing the Gilded Rose Kata in C# with pure functions *(except for the `UpdateQuality()` function in `GildedRose.cs`!)*. Forked from [C# starter created by ardalis](https://github.com/ardalis/GildedRoseStarter).
 
 # More Katas
 
