@@ -2,7 +2,7 @@
 {
     public static class BackstagePasses
     {
-        public static string Name => "Backstage passes to a TAFKAL80ETC concert";
+        public static string Key => "Backstage passes to a TAFKAL80ETC concert";
 
         public static Item Adjust(Item item) =>
             ItemUtils.Quality.Adjust(item, GetAdjustmentAmount(item));

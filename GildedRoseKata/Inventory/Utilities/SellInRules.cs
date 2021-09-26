@@ -10,7 +10,7 @@ namespace GildedRoseKata.Inventory.Utilities
         {
             public static readonly Dictionary<string, Func<Item, Item>> DecrementRules = new()
             {
-                {Sulfuras.Name, Sulfuras.TheOneRuleOfRagnaros}
+                {Sulfuras.Key, Sulfuras.TheOneRuleOfRagnaros}
             };
         }   
     }

@@ -1,9 +1,20 @@
 ﻿#nullable enable
 namespace GildedRoseKata.Inventory
 {
-    public class ItemProps
+    public interface IItemQuality
     {
-        public int? SellIn { get; init; }
+        public int? Quality { get; }
+    }
+
+    public interface IItemSellIn
+    {
+        
+        public int? SellIn { get; }
+    }
+    
+    public class ItemProps : IItemQuality, IItemSellIn
+    {
         public int? Quality { get; init; }
+        public int? SellIn { get; init; }
     }
 }

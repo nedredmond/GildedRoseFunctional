@@ -8,23 +8,23 @@ namespace GildedRoseKata.Inventory.Utilities
     {
         public static class Quality
         {
-            public static readonly List<Predicate<Item>> AdjustmentFactors = new()
+            public static readonly List<Predicate<Item>> AdjustmentMultipliers = new()
             {
                 item => item.SellIn <= 0,
-                Conjured.AdjustmentFactor
+                Conjured.AdjustmentMultiplier
             };
 
             public static readonly Dictionary<string, Func<Item, Item>> AdjustmentRules = new()
                 {
-                    {Sulfuras.Name, Sulfuras.TheOneRuleOfRagnaros},
-                    {BackstagePasses.Name, BackstagePasses.Adjust},
-                    {AgedBrie.Name, AgedBrie.Adjust}
+                    {Sulfuras.Key, Sulfuras.TheOneRuleOfRagnaros},
+                    {BackstagePasses.Key, BackstagePasses.Adjust},
+                    {AgedBrie.Key, AgedBrie.Adjust}
                 }
             ;
             
             public static readonly Dictionary<string, Func<Item,Item>> ConstraintRules = new()
             {
-                {Sulfuras.Name, Sulfuras.TheOneRuleOfRagnaros}
+                {Sulfuras.Key, Sulfuras.TheOneRuleOfRagnaros}
             };
 
             public enum Constraints

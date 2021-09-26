@@ -2,7 +2,7 @@
 {
     public static class AgedBrie
     {
-        public static string Name => "Aged Brie";
+        public static string Key => "Aged Brie";
         
         public static Item Adjust(Item item) => 
             ItemUtils.Quality.Adjust(item, 1);
